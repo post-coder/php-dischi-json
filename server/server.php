@@ -2,8 +2,11 @@
 
 $password = '123456';
 
+session_start();
 
-if(isset($_GET['password']) && $_GET['password'] === $password) {
+
+
+if(isset($_GET['password']) && $_GET['password'] === $password && isset($_SESSION['attempts']) && $_SESSION['attempts'] < 4 ) {
 
 
     // leggere il file json
@@ -46,13 +49,34 @@ if(isset($_GET['password']) && $_GET['password'] === $password) {
 
 
 } else {
-    $message = [
-        'error' => true,
-        'message' => 'You need to send the password parameter correctly'
-    ];
 
-    header('Content-Type: application/json');
-    echo json_encode($message);
+    if(isset($_SESSION['attempts'])) {
+        $_SESSION['attempts']++;
+    } else {
+        $_SESSION['attempts'] = 1;
+    }
+
+    if($_SESSION['attempts'] > 3) {
+        $message = [
+            'error' => true,
+            'message' => 'Too many attempts'
+        ];
+    
+        header('Content-Type: application/json');
+        echo json_encode($message);
+
+    } else {
+
+        $message = [
+            'error' => true,
+            'message' => 'You need to send the password parameter correctly'
+        ];
+    
+        header('Content-Type: application/json');
+        echo json_encode($message);
+
+    }
+
 }
 
 
