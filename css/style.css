@@ -1,0 +1,52 @@
+#album-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#album-details .album {
+    background-color: white;
+
+    padding: 20px;
+}
+
+
+#album-details .album .album-cover {
+    margin-bottom: 30px;
+    width: 600px;
+}
+
+
+#album-details .album h4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;  
+    
+    right: 30px;
+    top: 30px;
+    
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    
+    /* padding: 10px; */
+
+    border-radius: 10px;
+}
