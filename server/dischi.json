@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Ohms",
+        "author": "Deftones",
+        "year": 2020,
+        "poster": "https://upload.wikimedia.org/wikipedia/en/0/0d/Deftones_-_Ohms.png",
+        "genre": "Metal"
+    },
+    {
+        "title": "Pretty Monster",
+        "author": "The Blue Stones",
+        "year": 2022,
+        "poster": "https://moveonfirenze.com/wp-content/uploads/M000098004.jpg",
+        "genre": "Rock"
+    },
+    {
+        "title": "Back to the Water Below",
+        "author": "Royal Blood",
+        "year": 2023,
+        "poster": "https://upload.wikimedia.org/wikipedia/en/0/09/Royal_Blood_-_Back_to_the_Water_Below.png",
+        "genre": "Rock"
+    },
+    {
+        "title": "Music for an Infinite Universe",
+        "author": "65daysofstatic",
+        "year": 2016,
+        "poster": "https://i.scdn.co/image/ab67616d0000b2739dcc2964a550bc721ee7a010",
+        "genre": "Post Rock"
+    },
+    {
+        "title": "Wiped Out!",
+        "author": "The Nighbourhood",
+        "year": 2011,
+        "poster": "https://m.media-amazon.com/images/I/51tAmMbpMCL._UF1000,1000_QL80_.jpg",
+        "genre": "Alternative Rock"
+    },
+    {
+        "title": "NIRATIAS",
+        "author": "Chevelle",
+        "year": 2024,
+        "poster": "https://m.media-amazon.com/images/I/81L86RcNAdL._UF1000,1000_QL80_.jpg",
+        "genre": "Alternative Metal"
+    }
+]
