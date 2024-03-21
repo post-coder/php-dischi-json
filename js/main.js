@@ -13,12 +13,16 @@ createApp({
 
     mounted() {
 
-        console.log('selectedAlbum:', this.selectedAlbum)
+        // console.log('selectedAlbum:', this.selectedAlbum)
 
-        axios.get('./server/server.php')
+        axios.get('./server/server.php?password=123456')
             .then(res => {
-                console.log(res);
-                this.discs = res.data;
+                if(res.data.error) {
+                    alert("password sbagliata");
+                } else {
+                    console.log(res);
+                    this.discs = res.data;
+                }
         });
 
     },
@@ -27,9 +31,9 @@ createApp({
         albumClick(index) {
 
             // console.log('./server/server.php?discIndex=' + index);
-            axios.get('./server/server.php?discIndex=' + index)
+            axios.get('./server/server.php?password=123456&discIndex=' + index)
                 .then(res => {
-                    console.log(res.data);
+                    // console.log(res.data);
                     this.selectedAlbum = res.data;
             });
 
