@@ -28,7 +28,7 @@
 
                 <li 
                     v-for="(disc, index) in discs"  
-                    class="col card  p-0" 
+                    class="col card  p-0 album" 
                     style="width: 18rem;"
                     @click="albumClick(index)"
                 >
